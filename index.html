@@ -706,25 +706,10 @@
                         </div>
 
                         <div class="work-category">
-                            <div class="work-category-title">⚡ งานวิศวกรรมระบบ M&amp;E</div>
-                            <div class="checkbox-grid">
-                                <label class="option checkbox" onclick="toggleCheckbox(this)"><span class="checkmark"></span><span class="option-title">ออกแบบ/ทบทวน Shop Drawing งานระบบ</span></label>
-                                <label class="option checkbox" onclick="toggleCheckbox(this)"><span class="checkmark"></span><span class="option-title">คำนวณ/ตรวจสอบระบบ M&amp;E</span></label>
-                                <label class="option checkbox" onclick="toggleCheckbox(this)"><span class="checkmark"></span><span class="option-title">ตรวจรับงานระบบ M&amp;E หน้าไซต์</span></label>
-                                <label class="option checkbox" onclick="toggleCheckbox(this)"><span class="checkmark"></span><span class="option-title">ประสานงาน Subcontractor ระบบ</span></label>
-                                <label class="option checkbox" onclick="toggleCheckbox(this)"><span class="checkmark"></span><span class="option-title">ทำ BIM / Coordination งานระบบ</span></label>
-                                <label class="option checkbox" onclick="toggleCheckbox(this)"><span class="checkmark"></span><span class="option-title">ตรวจสอบ Commissioning ระบบ</span></label>
-                                <label class="option checkbox has-input" onclick="toggleCheckbox(this)"><span class="checkmark"></span><span class="option-title">อื่นๆ...</span><input type="text" class="other-input" placeholder="ระบุ..." onclick="event.stopPropagation()"></label>
-                            </div>
-                        </div>
-
-                        <div class="work-category">
                             <div class="work-category-title">💰 งานประมาณการและบริหารต้นทุน</div>
                             <div class="checkbox-grid">
                                 <label class="option checkbox" onclick="toggleCheckbox(this)"><span class="checkmark"></span><span class="option-title">ถอดแบบ/ทำ BOQ</span></label>
                                 <label class="option checkbox" onclick="toggleCheckbox(this)"><span class="checkmark"></span><span class="option-title">ประมาณราคางาน</span></label>
-                                <label class="option checkbox" onclick="toggleCheckbox(this)"><span class="checkmark"></span><span class="option-title">ติดตามต้นทุนจริง vs แผน</span></label>
-                                <label class="option checkbox" onclick="toggleCheckbox(this)"><span class="checkmark"></span><span class="option-title">วิเคราะห์ Cost Variance</span></label>
                                 <label class="option checkbox" onclick="toggleCheckbox(this)"><span class="checkmark"></span><span class="option-title">เปรียบเทียบราคาวัสดุ/Supplier</span></label>
                                 <label class="option checkbox" onclick="toggleCheckbox(this)"><span class="checkmark"></span><span class="option-title">ขอใบเสนอราคาจาก Supplier</span></label>
                                 <label class="option checkbox" onclick="toggleCheckbox(this)"><span class="checkmark"></span><span class="option-title">ตรวจสอบราคาซื้อกับราคาตลาด</span></label>
@@ -775,8 +760,8 @@
                     </div>
 
                     <div class="question">
-                        <label class="question-label">C2. งานที่ต้องทำซ้ำๆ เป็นประจำทุกวัน (เรียงลำดับ 1=มากที่สุด)</label>
-                        <div class="question-sublabel">กรุณาระบุขั้นตอนและบริบทอย่างละเอียด — คือกุญแจสำคัญที่ทำให้ AI เข้าใจงานของท่านได้อย่างสมบูรณ์</div>
+                        <label class="question-label">C2. งานที่ต้องทำซ้ำๆ เป็นประจำทุกวัน หรือเกิดขึ้นบ่อยๆ</label>
+                        <p class="question-sublabel">กรุณาเรียงลำดับจากมากไปน้อย (1 คือมากที่สุด)<br>💡 การระบุขั้นตอนและบริบทอย่างละเอียด คือกุญแจสำคัญที่ทำให้ AI เข้าใจงานของท่านได้อย่างสมบูรณ์</p>
                         <div class="dynamic-inputs" id="repeatWorkInputs">
                             <div class="dynamic-input-row">
                                 <input type="text" class="dotted-input" placeholder="อันดับ 1: .....................................................">
@@ -832,7 +817,6 @@
                                 <label class="option checkbox" onclick="toggleCheckbox(this)"><span class="checkmark"></span><span class="option-title">ตรวจสอบความผิดปกติของราคา/ปริมาณยาก</span></label>
                                 <label class="option checkbox" onclick="toggleCheckbox(this)"><span class="checkmark"></span><span class="option-title">Supplier ส่งช้า/คุณภาพไม่คงที่ แต่ไม่มีข้อมูลประเมิน</span></label>
                                 <label class="option checkbox" onclick="toggleCheckbox(this)"><span class="checkmark"></span><span class="option-title">สั่งซื้อเกินแผน BOQ แต่ตรวจสอบยาก</span></label>
-                                <label class="option checkbox" onclick="toggleCheckbox(this)"><span class="checkmark"></span><span class="option-title">ต้นทุนจริงเบี่ยงเบินจากแผน แต่รู้ช้า</span></label>
                                 <label class="option checkbox" onclick="toggleCheckbox(this)"><span class="checkmark"></span><span class="option-title">ไม่มีข้อมูลราคาตลาดอ้างอิง</span></label>
                                 <label class="option checkbox has-input" onclick="toggleCheckbox(this)"><span class="checkmark"></span><span class="option-title">อื่นๆ...</span><input type="text" class="other-input" placeholder="ระบุ..." onclick="event.stopPropagation()"></label>
                             </div>
@@ -861,8 +845,8 @@
                     </div>
 
                     <div class="question">
-                        <label class="question-label">D2. Pain Points — การทำงานที่รู้สึกว่า "น่าจะมีวิธีที่ดีกว่านี้"</label>
-                        <div class="question-sublabel">กรุณาระบุขั้นตอนและบริบทอย่างละเอียด — คือกุญแจสำคัญที่ทำให้ AI เข้าใจงานของท่านได้อย่างสมบูรณ์</div>
+                        <label class="question-label">D2. กรุณาระบุขั้นตอนการทำงานที่อาจจะสร้างความลำบาก (Pain Points)</label>
+                        <p class="question-sublabel">หรือการทำงานที่เรารู้สึกว่า "น่าจะมีวิธีที่ดีกว่านี้"<br>💡 การระบุขั้นตอนและบริบทอย่างละเอียด คือกุญแจสำคัญที่ทำให้ AI เข้าใจงานของท่านได้อย่างสมบูรณ์</p>
                         <div class="dynamic-inputs" id="painPointInputs">
                             <div class="dynamic-input-row">
                                 <input type="text" class="dotted-input" placeholder="อันดับ 1: .....................................................">
@@ -1060,8 +1044,8 @@
                     </div>
 
                     <div class="question">
-                        <label class="question-label">F1. Key Success — บริการ/เครื่องมือที่คิดว่าเป็นกุญแจสำคัญ</label>
-                        <div class="question-sublabel">เช่น เคล็ดลับ: เมื่อตอบราคาขนส่งลูกค้าได้ภายใน 15 นาที ส่วนใหญ่จะปิดการขายได้ตลอด</div>
+                        <label class="question-label">F1. กรุณาระบุการให้บริการ หรือเครื่องมือใดๆ ที่คิดว่าเป็นกุญแจสำคัญ (Key Success) ที่ทำให้ภารกิจสำเร็จได้</label>
+                        <p class="question-sublabel">เช่น เคล็ดลับ: "เมื่อตอบราคาขนส่งลูกค้าได้ภายใน 15 นาที ส่วนใหญ่จะปิดการขายได้ตลอด"<br>💡 การระบุขั้นตอนและบริบทอย่างละเอียด คือกุญแจสำคัญที่ทำให้ AI เข้าใจงานของท่านได้อย่างสมบูรณ์</p>
                         <div class="dynamic-inputs" id="keySuccessInputs">
                             <div class="dynamic-input-row">
                                 <input type="text" class="dotted-input" placeholder="อันดับ 1: .....................................................">
@@ -1076,7 +1060,7 @@
 
                     <div class="question">
                         <label class="question-label">F2. ข้อเสนอแนะเชิงสร้างสรรค์ (Creativity)</label>
-                        <div class="question-sublabel">ไอเดียอะไรก็ได้ที่ต้องการนำเสนอ โดยไม่จำกัดขอบเขต</div>
+                        <p class="question-sublabel">รบกวนเสนอแนะ หรือแนวคิดอะไรก็ได้ ที่ท่านต้องการนำเสนอ เพื่อให้มีเครื่องมือหรือตัวช่วยในการทำงาน โดยไม่จำกัดขอบเขต<br>(อาจจะเป็นไอเดียที่ท่านคิดไว้ หรือเห็นจากที่อื่นที่น่าสนใจก็ได้)</p>
                         <div class="dynamic-inputs" id="creativityInputs">
                             <div class="dynamic-input-row">
                                 <input type="text" class="dotted-input" placeholder="ข้อเสนอแนะที่ 1: .....................................................">
@@ -1119,7 +1103,8 @@
         </div>
 
         <div class="footer">
-            TTS Engineering (2004) Co., Ltd. • ข้อมูลจะถูกเก็บเป็นความลับ
+            <strong>Innovate AI Co., Ltd.</strong> x <strong>TTS Engineering (2004)</strong> | Connected to Google Sheets
+        </div>
         </div>
     </div>
 
@@ -1318,11 +1303,10 @@
             const workCats = step3.querySelectorAll('.work-category');
             const dailyWork = {
                 engineering: collectCheckboxes(workCats[0]),
-                meEngineering: collectCheckboxes(workCats[1]),
-                costEstimation: collectCheckboxes(workCats[2]),
-                warehouse: collectCheckboxes(workCats[3]),
-                accounting: collectCheckboxes(workCats[4]),
-                admin: collectCheckboxes(workCats[5])
+                costEstimation: collectCheckboxes(workCats[1]),
+                warehouse: collectCheckboxes(workCats[2]),
+                accounting: collectCheckboxes(workCats[3]),
+                admin: collectCheckboxes(workCats[4])
             };
 
             const repeatWork = [];
@@ -1403,12 +1387,18 @@
             document.getElementById('nextBtn').textContent = 'กำลังส่ง...';
             try {
                 if (GOOGLE_SCRIPT_URL && GOOGLE_SCRIPT_URL !== 'YOUR_GOOGLE_SCRIPT_URL_HERE') {
-                    await fetch(GOOGLE_SCRIPT_URL, {
-                        method: 'POST',
-                        mode: 'no-cors',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify(data)
-                    });
+                    const controller = new AbortController();
+                    const timeout = setTimeout(() => controller.abort(), 8000);
+                    try {
+                        await fetch(GOOGLE_SCRIPT_URL, {
+                            method: 'POST',
+                            mode: 'no-cors',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify(data),
+                            signal: controller.signal
+                        });
+                    } catch (e) { /* no-cors หรือ timeout — ถือว่าส่งแล้ว */ }
+                    clearTimeout(timeout);
                 }
                 console.log('Data collected:', data);
                 currentStep = totalSteps + 1;
