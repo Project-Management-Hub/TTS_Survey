@@ -1020,7 +1020,10 @@
                                 </div>
                             </div>
                             <div class="rating-row" id="expectationOtherRow">
-                                <span class="rating-label"><input type="text" id="expectationOtherText" class="dotted-input" placeholder="อื่นๆ (ระบุ)..." style="font-size:0.8rem;"></span>
+                                <div class="rating-label" style="display:flex; align-items:center; gap:8px;">
+                                    <span>อื่นๆ</span>
+                                    <input type="text" id="expectationOtherText" class="dotted-input" placeholder="โปรดระบุ..." style="flex:1; min-width:100px;">
+                                </div>
                                 <div class="rating-buttons">
                                     <button class="rating-btn" onclick="selectRating(this)">1</button><button class="rating-btn" onclick="selectRating(this)">2</button><button class="rating-btn" onclick="selectRating(this)">3</button><button class="rating-btn" onclick="selectRating(this)">4</button><button class="rating-btn" onclick="selectRating(this)">5</button>
                                 </div>
@@ -1100,13 +1103,11 @@
 
             <!-- Success Page -->
             <div class="step" data-step="7" style="display:none;">
-                <div class="section">
-                    <div class="success-page">
-                        <div class="success-icon">✓</div>
-                        <h2>ขอบคุณที่ตอบแบบสอบถามค่ะ!</h2>
-                        <p>ข้อมูลของท่านจะถูกนำไปใช้ในการพัฒนา<br>หลักสูตรและ Solution AI ที่เหมาะสมกับ TTS Engineering ต่อไป</p>
-                        <button class="nav-btn next" onclick="resetSurvey()" style="margin:0 auto; display:block;">ตอบแบบสอบถามใหม่</button>
-                    </div>
+                <div class="section success-page">
+                    <div class="success-icon">✓</div>
+                    <h2>ขอบคุณที่สละเวลาตอบแบบสอบถามค่ะ</h2>
+                    <p>เราจะนำไปใช้ในการพัฒนาเพื่อสนับสนุนการทำงานของทุกท่านต่อไปค่ะ</p>
+                    <button class="nav-btn next" onclick="resetSurvey()">เริ่มใหม่</button>
                 </div>
             </div>
 
